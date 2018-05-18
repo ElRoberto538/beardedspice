@@ -17,8 +17,8 @@ BSStrategy = {
   },
   isPlaying: function () { return !document.querySelector('#movie_player video').paused; },
   toggle: function () { document.querySelector('#movie_player .ytp-play-button').click(); },
-  previous: function () { document.querySelector('yt-player-manager').player_.previousVideo(); },
-  next: function () { document.querySelector('yt-player-manager').player_.nextVideo(); },
+  previous: function () { document.querySelector('#movie_player').previousVideo(); },
+  next: function () { document.querySelector('#movie_player').nextVideo(); },
   pause: function () { document.querySelector('yt-player-manager').player_.pauseVideo(); },
   favorite: function () { document.querySelector('ytd-toggle-button-renderer').click(); },
   trackInfo: function () {
